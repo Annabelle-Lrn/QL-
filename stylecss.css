@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Bemock;
+    src: url(/assets/fonts/edosz.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --color1: white;
+    --color2: #a6ce3f;
+    --color3:rgba(135, 207, 235, 0.952);
+    --color4:#103d74;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width:1100px;
+}
+body{
+    color: var(--color1);
+    background: var(--color4);
+    animation: eclair 10s ;
+   
+}
+@keyframes eclair {
+    0%{background: url(./assets/img/eclair.png) center/cover;
+        opacity: 1;
+        z-index: 2;}
+    100%
+    {background: var(--color4);}
+    
+}
+header{
+    background: url(./assets/img/bg.webp) center/cover;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+h1{
+    font-family: "Bemock", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.form-contact{
+    position: absolute;
+    right: 5px;
+    bottom: 2px;
+}
+a{
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+a:hover{
+    font-size:1.5rem;
+    color: var(--color2);
+}
+header::after{
+    content: "";
+    position:absolute;
+    background: var(--color2);
+    height: 5px;
+    width: 100%;
+    bottom:-1px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    animation: headeranim 6s ease-in-out 4s forwards;
+    transform-origin: left;
+}
+@keyframes headeranim {
+    100% {
+        transform: translateX(-50%) scaleX(1) ;
+    } 
+}
+.info-dev{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    animation: startsite 6s;
+}
+@keyframes startsite {
+    0%{
+        background: black;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    gap:20px;
+    background: var(--color4);
+    animation: startsite 6s;
+}
+.prestation-container{
+    place-self: center left;
+    margin-left: 20px;
+    height: 100%;
+    background: rgb(235 228 228 / 14%);
+    border-radius: 6px;
+    /*border: 1px solid var(--color3);*/
+    box-shadow: 4px 5px 6px 3px var(--color3);
+    /*animation: startsite 6s;*/
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+.puce{
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.puce >i{
+    animation: icolor 6s infinite linear;
+}
+@keyframes icolor {
+    50%{
+    color: yellow;
+    filter:drop-shadow(0px 6px 3px rgba(253, 253, 7, 0.993));
+    }
+    100%{
+        color:white;
+    }
+}
+li{
+    list-style: none;
+    display: inline;
+    font-size:1.5rem;
+}
+.i1{
+    background: url(./assets/visuels/tableauavant.webp);
+}
+.carrousel-item{
+    position: relative;
+}
+.carrousel-item img{
+    position:absolute;
+    object-fit: cover;
+    border-radius: 10px;
+    width:60%;
+}
+footer::before{
+    content: "";
+    position:absolute;
+    background: var(--color2);
+    height: 5px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    animation: footeranim 6s ease-in-out 4s forwards;
+    transform-origin: right;
+}
+@keyframes footeranim {
+    100% {
+        transform: translateX(-50%) scaleX(1) ;
+    } 
+}
+footer{
+    background: url(./assets/img/bg.webp) center/cover;
+    font-family: "Oswald",Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+}
+footer > p{
+    padding: 5px;
+    display: inline;
+}
+.ste{
+    display: block;
+}
+.bemock{
+    font-family:"Bemock";
+}

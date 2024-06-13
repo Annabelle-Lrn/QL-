@@ -1,0 +1,94 @@
+  @import url("https://use.typekit.net/lzw2tkw.css");
+
+body{
+    margin:0px;
+    padding:0px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family:"Montserrat",sans-serif ;
+    background-color: #103d74;
+}
+form{
+    padding: 20px;
+    border:1px solid #103d74;
+    border-radius: 10px;  
+    box-shadow: 3px 5px 20px grey;
+    background-color: white;
+}
+
+form h1{
+    font-size:30px;
+    text-align: center;
+    font-style: bold;
+    text-shadow: 3px;
+    font-family: "quicksand",sans-serif;
+
+
+}
+.traitseparation{
+   width: 100%;
+   height: 2px;
+   background-color: #71a9ee;
+}
+
+label{
+    margin-bottom:2px;
+}
+.corpsformulaire{
+    display:flex;
+    flex-wrap:wrap;
+    padding:20px;
+    margin-bottom: 10px;
+}
+.corpsformulaire .boite{
+    position:relative;
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+}
+.corpsformulaire .gauche input{
+    margin-top:5px;
+    padding:10px 5px 10px 25px;
+    border: 1px solid #103d74;
+    border-radius:5px;
+}
+.corpsformulaire .gauche i{
+    position:absolute;
+    left:0px;
+    top:20px;
+    padding:15px 8px;
+}
+.corpsformulaire .droite{
+    margin-left: 40px;
+}
+.coprsformulaire .droite {
+    height: 100%;
+}
+select{
+    border: 1px solid #103d74;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.corpsformulaire textarea{
+    margin-top:3px;
+    padding:10px;
+    height: 70%;
+    width: 100%;
+    border: 1px solid #103d74;
+    border-radius:5px;
+    resize:none;
+}
+/*.bouton{
+    display:grid;
+}*/
+button{
+    margin-left:40%;
+    font-size: 15px;
+    padding : 10px 15px;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    background: #71a9ee;
+ }
