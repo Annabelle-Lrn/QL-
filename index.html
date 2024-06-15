@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QL Elect - Electricien à Saint Gervais d'auvergne</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="stylecss.css" />
-    <!-- <link rel="stylesheet" href="formulairecontactstylecss.css"> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="formulairecontactstylecss.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -13,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -24,7 +26,7 @@
   
     <main>
       <div class="info-dev">
-        <p class="left">Secteur d'intervention :<br> rayon de 20km autour de St Gervais d'Auvergne</p><p>||</p>
+        <p class="left">Secteur d'intervention :<br> rayon de 20km autour de St Gervais d'Auvergne</p>
         <p class="right">Devis gratuit</p>
       </div>
       <div class="grid-container">
@@ -52,61 +54,59 @@
             </div>
           </section>
           <section class="carrousel-grid">
-            <div class="carrousel">
-              <div class="carrousel-item i1" >
-                <img src="./assets/img/tableauavant.webp" alt="tableau éléctrique avant travaux">
-              </div>
-              <div class="carrousel-item i2">
-                <img src="./assets/img/tableauapres.webp" alt="tableau éléctrique aprés travaux">
-              </div>
-              <div class="carrousel-item i3">
-                <img src="./assets/img/creationtableau.webp" alt="création tableau">
-              </div>
-            </div> 
-          </section>        
+          <div class="carrousel">
+            <div class="carrousel-img active">
+              <img class="item"src="./assets/img/tableauavant.webp" alt="tableau éléctrique avant travaux">
+            </div>
+            <div class="carrousel-img">
+              <img id="item" src="./assets/img/tableauapres.webp" alt="tableau éléctrique aprés travaux">
+            </div>
+            <div class="carrousel-img">
+              <img class="item" src="./assets/img/creationtableau.webp" alt="création tableau">
+           </div>
+          </div>
+         </section>        
           <section class="contact-grid">
             <div class="contact-form">
+              <form action="POST">
               <h2>Contactez-moi</h2>
               <div class="corpsformulaire">
                   <div class="gauche">
                          <div class="boite">
-                              <label>Votre nom</label>
+                              <label for="nom">Votre nom</label>
                               <i class="fa-solid fa-user" style="color: #103d74;"></i>
-                              <input type="text" name="nom" required>
+                              <input type="text" name="nom" id="nom" required>
                           </div>
                           <div class="boite">
-                              <label>Votre numéro de téléphone</label>
+                              <label for="telephone">Votre numéro de téléphone</label>
                               <i class="fa-solid fa-phone" style="color:#103d74;"></i>
-                              <input type="text" name="telephone" required>
+                              <input type="text" name="telephone" id="telephone" required>
                           </div>
                               <div class="boite"></div>
-                              <label>Votre email</label>
+                              <label for="mail">Votre email</label>
                               <i class="fa-solid fa-envelope" style="color: #103d74;"></i>
-                              <input type="email" name="email" required>
+                              <input type="email" name="mail" id="mail" required>
                           </div>
                   </div>
                   <div class="droite">
-                          <div class="boite">
-                              <label>Votre demande</label>
-                              <select>
-                              <option value="">Choisissez un motif</option>
-                              <option value="Miseaunormes">Mise aux normes</option>
-                              <option value="reno">Rénovation</option>
-                              <option value="nouvelleinstallation">Nouvelle installation</option>
-                              <option value="acquisition">Demande de devis pour un futur achat</option>
-                              </select>
-                          </div>
-                  
-                          <div>
-                          <label>Message</label>
-                          <textarea placeholder="Saisissez votre message ici..."></textarea>
-                          </div>
-                  </div>        
-              </div>
-              <div class="bouton">
-                  <button> Envoyer </button>      
-              </div>
-            </div>
+                    <div class="boite">
+                      <label for="demande">Votre demande</label>
+                      <select id="demande">
+                        <option value="">Choisissez un motif</option>
+                        <option value="Miseaunormes">Mise aux normes</option>
+                        <option value="reno">Rénovation</option>
+                        <option value="nouvelleinstallation">Nouvelle installation</option>
+                        <option value="acquisition">Demande de devis pour un futur achat</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="message">Message</label>
+                      <textarea id="message"placeholder="Saisissez votre message ici..."></textarea>
+                    </div>
+                  </div>                    
+              <input class="btn" type="submit">
+            </form> 
+          </div>  
           </section>
         </div>
     </main>
