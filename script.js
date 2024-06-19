@@ -11,4 +11,4 @@ function carrousel() {
     slideActive.classList.remove("active");
 }
 
-setInterval(carrousel, 6000);
+setInterval(carrousel, 10000);
