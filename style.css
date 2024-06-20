@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
 @font-face {
     font-family: Bemock;
-    src: url(/assets/fonts/edosz.ttf);
+    src: url(./assets/fonts/edosz.ttf);
 }
 
 

@@ -1,14 +1,16 @@
-function carrousel() {
-    const slides = document.getElementsByClassName("carrousel-img");
-    const slideActive = document.getElementsByClassName("active");
+let currentIndex=0;
+const slides= document.getElementsByClassName("carrousel-img");
+const timer= 6000;
+const slideActive=[...document.getElementsByClassName("active")];
+console.log(slideActive)
 
-    newIndex = [...slides].indexOf(slideActive);
-
-    if (newIndex < 0) newIndex = [...slides].length - 1;
-    if (newIndex >= [...slides].length) newIndex = 0;
-    slides[newIndex].classList.add("active");
-
+ function showSlide(currentIndex){
+    for(let i =0; i<slides.length; i++){
     slideActive.classList.remove("active");
+    slides.classList.add("active");
+    currentIndex++;  
 }
+}  
+        
 
-setInterval(carrousel, 10000);
+setInterval(showSlide, 6000);
