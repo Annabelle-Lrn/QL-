@@ -178,6 +178,61 @@ img{
     position: absolute;
     width: 100%;
 }
+/************************************Formulaire***********************************************/
+.contact-form{
+    width: 100%;
+}
+.corpsformulaire{
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 20px;
+}
+h2{
+    margin: 2px;
+}
+.corpsformulaire .boite{
+    position:relative;
+    margin-top:5px;
+    display:flex;
+    flex-direction: column;
+}
+.corpsformulaire input{
+    margin-top:5px;
+    padding:5px 5px 10px 5px;
+    border: 1px solid #103d74;
+    border-radius:5px;
+}
+.corpsformulaire i{
+    position:absolute;
+    left:0px;
+    top:20px;
+    padding:15px 8px;
+}
+select{
+    border: 1px solid #103d74;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.corpsformulaire textarea{
+    height: 70%;
+    width: 100%;
+    border: 1px solid #103d74;
+    border-radius:5px;
+    resize:none;
+}
+/*.bouton{
+    display:grid;
+}*/
+btn{
+    margin-left:40%;
+    font-size: 15px;
+    padding : 10px 15px;
+    text-align: center;
+    border:none;
+    border-radius: 5px;
+    background: #71a9ee;
+ }
+
 footer::before{
     content: "";
     position:absolute;

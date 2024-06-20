@@ -1,0 +1,44 @@
+main{
+    display: flex;
+    flex-direction: column;
+    
+    .info-dev{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        padding-top: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+        .right{
+            align-self: center;
+        }
+    }
+
+    .grid-container{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 25% 30% 45%;
+        grid-template-rows: 505px;
+        padding: 0 15px;
+
+
+        .carrousel-grid{
+            width: 100%;
+            overflow: hidden;
+            .carrousel{
+                position: relative;
+                width: 90%;
+            }
+            .carrousel-img{
+                position:absolute;
+                width: 90%;
+                img{
+                    object-fit: cover;
+                    display: block;
+                    position:absolute;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
