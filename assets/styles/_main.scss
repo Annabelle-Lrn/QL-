@@ -17,17 +17,41 @@ main{
     .grid-container{
         width: 100vw;
         display: grid;
-        grid-template-columns: 25% 30% 45%;
+        grid-template-columns: 25% 40% 35%;
+        gap: 10px;
         grid-template-rows: 505px;
         padding: 0 15px;
 
+        .presta-grid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .puce{
+                display: flex;
+                margin: 50px;
+                i{
+                    padding: 0 15px;
+                    animation: icolor 6s ease-in-out infinite;
+                    transition: 0.5s;
+                }
+                @keyframes icolor {
+                    to{
+                        color: rgba(243, 243, 90, 0.89);
+                        filter: blur(1px);
+                    }
+                    
+                }
+            }
+        }
 
         .carrousel-grid{
             width: 100%;
             overflow: hidden;
             .carrousel{
                 position: relative;
-                width: 90%;
+                width: 100%;
+                
             }
             .carrousel-img{
                 position:absolute;
@@ -36,7 +60,8 @@ main{
                     object-fit: cover;
                     display: block;
                     position:absolute;
-                    width: 100%;
+                    width: 90%;
+                    border-radius: 25px;
                 }
             }
         }
