@@ -110,20 +110,21 @@ main .grid-container .carrousel-grid {
   overflow: hidden;
 }
 main .grid-container .carrousel-grid .carrousel {
+  margin-top: 40px;
   position: relative;
-  width: 100%;
+  width: 80%;
+  display: inline-block;
 }
-main .grid-container .carrousel-grid .carrousel-img {
+main .grid-container .carrousel-grid .carrousel > * + * {
   position: absolute;
-  width: 90%;
+  top: 0;
+  left: 0;
 }
-main .grid-container .carrousel-grid .carrousel-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+main .grid-container .carrousel-grid .carrousel img {
   display: block;
-  position: absolute;
-  width: 90%;
-  border-radius: 25px;
+  max-height: 400px;
+  min-width: 550px;
+  border-radius: 20px;
 }
 
 footer {

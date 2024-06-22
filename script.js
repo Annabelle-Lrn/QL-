@@ -1,16 +1,6 @@
-let currentIndex=0;
-const slides= document.getElementsByClassName("carrousel-img");
-const timer= 6000;
-const slideActive=[...document.getElementsByClassName("active")];
-console.log(slideActive)
-
- function showSlide(currentIndex){
-    for(let i =0; i<slides.length; i++){
-    slideActive.classList.remove("active");
-    slides.classList.add("active");
-    currentIndex++;  
+function showCarrousel(diapo){
+    const diapoimg = document.getElementById(diapo);
+    diapoimg.append(diapoimg.firstElementChild);
+    setTimeout(()=> showCarrousel(diapo),6000);
 }
-}  
-        
-
-setInterval(showSlide, 6000);
+showCarrousel("diapo")

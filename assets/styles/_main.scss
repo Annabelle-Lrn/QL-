@@ -49,20 +49,23 @@ main{
             width: 100%;
             overflow: hidden;
             .carrousel{
+                margin-top: 40px;
                 position: relative;
-                width: 100%;
-                
-            }
-            .carrousel-img{
-                position:absolute;
-                width: 90%;
-                img{
-                    object-fit: cover;
-                    display: block;
-                    position:absolute;
-                    width: 90%;
-                    border-radius: 25px;
+                width: 80%;
+                display: inline-block;
+                &>*+*{
+                    position: absolute;
+                    top:0;
+                    left:0;
                 }
+
+                img{
+                    display: block;
+                    max-height: 400px;
+                    min-width: 550px;
+                    border-radius: 20px;
+                }
+                
             }
         }
     }
