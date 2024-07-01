@@ -9,31 +9,20 @@ $white:rgb(247, 241, 241);
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
     box-sizing: border-box;
-    max-width: 100vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    // &:before{
-    //     content: "";
-    //     position: absolute;
-    //     height: 100%;
-    //     width: 100%;
-    //     top: 0;
-    //     left: 0;
-    //     background: black;
-    //     animation: animBefore 10s ease forwards;
-    //     animation: eclair 10s ease forwards;
-    //     @keyframes animBefore {
-    //         to{
-    //             opacity: 0;
-    //         }
-            
-    //     }
-    // }
 }
 body{
+    display: flex;
+    flex-direction: column;
     color:$white;
     background: $blue;
+    height: 100vh;
     
+}
+main{
+    flex-grow: 1;
 }
 // @keyframes eclair {
 //     to{background: url(../img/eclair.png) fixed center/cover;

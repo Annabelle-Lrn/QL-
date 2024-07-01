@@ -16,11 +16,12 @@ main{
 
     .grid-container{
         width: 100vw;
+        height: 80%;
         display: grid;
-        grid-template-columns: 25% 40% 35%;
+        grid-template-columns: 15% 45% 40%;
         gap: 10px;
-        grid-template-rows: 505px;
         padding: 0 15px;
+        
 
         .presta-grid{
             display: flex;
@@ -46,24 +47,27 @@ main{
         }
 
         .carrousel-grid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85%;
             width: 100%;
-            overflow: hidden;
+
+            #diapo{
+                height: 100%;
+                width: 100%;
+            }
             .carrousel{
                 margin-top: 40px;
                 position: relative;
                 width: 80%;
-                display: inline-block;
-                &>*+*{
-                    position: absolute;
-                    top:0;
-                    left:0;
-                }
-
+                height: 100%;
                 img{
-                    display: none;
-                    max-height: 400px;
-                    min-width: 550px;
+                    position: absolute;
+                    height: 100%;
+                    width: 95%;
                     border-radius: 20px;
+                    object-fit: contain;
                 }
                 
             }
