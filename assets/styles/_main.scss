@@ -18,15 +18,13 @@ main{
         width: 100vw;
         height: 80%;
         display: grid;
-        grid-template-columns: 15% 45% 40%;
-        gap: 10px;
-        padding: 0 15px;
-        
-
+        grid-template-columns: 20% 45% 35%;
+        gap: 1px;
+    
         .presta-grid{
             display: flex;
             justify-content: center;
-            align-items: center;
+            margin-top: 5px;
 
             .puce{
                 display: flex;
@@ -50,7 +48,7 @@ main{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 85%;
+            height: 80%;
             width: 100%;
 
             #diapo{
@@ -58,19 +56,41 @@ main{
                 width: 100%;
             }
             .carrousel{
-                margin-top: 40px;
-                position: relative;
-                width: 80%;
+              margin-top: 40px;
+              position: relative;
+              width: 80%;
+              height: 100%;
+              .active{
+                visibility: visible !important;
+              }
+              .item{
+                position: absolute;
                 height: 100%;
-                img{
-                    position: absolute;
+                width: 100%;
+                visibility: hidden;
+                  img{
+                    position: relative;
                     height: 100%;
-                    width: 95%;
-                    border-radius: 20px;
+                    width: 100%;
                     object-fit: contain;
+                 }
+                 p{
+                  position:absolute;
+                  top: 80%;
+                  left: 50%;
+                  transform: translate(-50%, -60%);
+                  font-size: 1.5rem;
+                  padding: 0 10px;
+                  text-align: center;
+                  backdrop-filter: brightness(45%);
+                  box-shadow: 9px 4px 10px 8px rgb(106 103 103 / 76%);
                 }
-                
+              }
             }
+        }
+        .contact-grid{
+          margin-top: 5px;
+          height: 95%;
         }
     }
 }

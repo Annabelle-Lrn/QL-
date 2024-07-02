@@ -1,0 +1,35 @@
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(68, 68, 68, 0.863);
+    z-index: 5;
+    display: none;
+
+  
+    .close{
+        position: absolute;
+        top: 15px;
+        right:15px;
+        font-size: 2.5rem;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.5);
+            transition: 1s ease-out;
+            color:$green;
+        }
+    }
+
+    img{
+        width: auto;
+        height: 90%;
+    }
+
+  }  
+  .show{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
