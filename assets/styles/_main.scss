@@ -28,9 +28,10 @@ main{
 
             .puce{
                 display: flex;
-                margin: 50px;
+                margin: 40px 0;
                 i{
                     padding: 0 15px;
+                    font-size: 1.9rem;
                     animation: icolor 6s ease-in-out infinite;
                     transition: 0.5s;
                 }

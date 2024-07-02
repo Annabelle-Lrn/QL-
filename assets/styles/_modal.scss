@@ -33,12 +33,15 @@
     position: absolute;
     z-index: 5;
     font-size: 2rem;
-    font-family: $fontL;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: $fontG;
     color: $blue;
     background:$green;
     border-radius: 20px;
     padding: 0 20px;
-    box-shadow: 9px 4px 6px 2px $green;
+    box-shadow: 9px 4px 6px 2px #99a57a;
     top: 20px;
     left: 50%;
     transform: translate(-50%);

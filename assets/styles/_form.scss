@@ -3,6 +3,10 @@
     width: 100%;
     
     .contact-form{
+      h2{
+        font-family: $fontnot;
+        font-size: 2.1rem;
+      }
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;

@@ -3,11 +3,16 @@
     src: url(../fonts/edosz.ttf);
 }
 @font-face {
-    font-family: bedmock;
-    src: url(../fonts/Bemock.ttf);
+    font-family: gruppo;
+    src: url(../fonts/Gruppo-Regular.ttf);
 }
-$fontL:'ballw', sans-serif;
+@font-face {
+    font-family: Nothing;
+    src: url(../fonts/NothingYouCouldDo-Regular.ttf);
+}
+$fontG:'gruppo', sans-serif;
 $fontN:"edosz", serif;
+$fontnot:"Nothing", verdana;
 $blue:#103d74;
 $green:#a6ce3f;
 $white:rgb(247, 241, 241);
@@ -29,11 +34,7 @@ body{
 main{
     flex-grow: 1;
 }
-// @keyframes eclair {
-//     to{background: url(../img/eclair.png) fixed center/cover;
-//         opacity:1;
-//     }
-// }
+
 header,
 footer{
     background: url(../img/bg.webp) center/cover;
@@ -43,4 +44,5 @@ h2{
   }
 li{
     list-style: none;
+    font-size: 1.5rem;
 }
