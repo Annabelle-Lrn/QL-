@@ -23,11 +23,26 @@
     }
 
     img{
+        position: relative;
         width: auto;
         height: 90%;
     }
 
   }  
+  .legende{
+    position: absolute;
+    z-index: 5;
+    font-size: 2rem;
+    font-family: $fontL;
+    color: $blue;
+    background:$green;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-shadow: 9px 4px 6px 2px $green;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+  }
   .show{
         display: flex;
         align-items: center;

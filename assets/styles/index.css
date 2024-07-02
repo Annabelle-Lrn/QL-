@@ -2,6 +2,10 @@
   font-family: edosz;
   src: url(../fonts/edosz.ttf);
 }
+@font-face {
+  font-family: bedmock;
+  src: url(../fonts/Bemock.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -284,8 +288,24 @@ footer .edosz {
   color: #a6ce3f;
 }
 .modal img {
+  position: relative;
   width: auto;
   height: 90%;
+}
+
+.legende {
+  position: absolute;
+  z-index: 5;
+  font-size: 2rem;
+  font-family: "ballw", sans-serif;
+  color: #103d74;
+  background: #a6ce3f;
+  border-radius: 20px;
+  padding: 0 20px;
+  box-shadow: 9px 4px 6px 2px #a6ce3f;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .show {
