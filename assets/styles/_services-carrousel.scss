@@ -1,0 +1,15 @@
+.services_carrousel{
+    display: flex;
+    flex-direction: column;
+
+    #realisations{
+        position: relative;
+        display: flex;
+        padding: 20px;
+        img{
+            width: 80%;
+            height: auto;
+            position: absolute;
+        }
+    }
+}
