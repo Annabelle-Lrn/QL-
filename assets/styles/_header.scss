@@ -1,33 +1,35 @@
 header{
-    position: relative;
-    color: $white;
-    margin-bottom: 5px;
-    h1{
-        font-family: $fontN;
-        text-align: center;
-        font-size: 4rem;}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("/assets/img/bg.webp") center/cover;
+  h1{
+    
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    text-shadow: 11px 7px 9px black;
+    color: white;
+    background: transparent;
+  }
 
-    &::after{
-            content: "";
-            position:absolute;
-            background:$green;
-            height: 5px;
-            width: 100%;
-            bottom:-1px;
-            left: 50%;
-            transform: translateX(-50%) scaleX(0);
-            animation: headeranim 6s ease-in-out 4s forwards;
-            transform-origin: left;
-        }
-        @keyframes headeranim {
-            100% {
-                transform: translateX(-50%) scaleX(1) ;
-            } 
-        }
-    a{
-        position: absolute;
-        color:$white;
-        right: 10px;
-        bottom:5px;
+  ul{
+    list-style: none;
+    display: flex;   
+    justify-content: space-around;
+    background: $green;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    :hover{
+      color : red;
+      transform: scale(1.2);
+    }  
+    li{
+        padding: 10px;
+        text-align: left;
+        background: transparent;
     }
+  }
+
 }
