@@ -15,16 +15,18 @@
 </div>
 <header>
   <h1>QL Elec</h1>
-  <nav>
-    <ul>
-      <li> Prestations </li>
-      <li> Réalisations </li>
-      <li> Me contacter </li>
-    </ul>
-  </nav>
+  <h2>Electricien à Saint Gervais d'auvergne</h2>
 </header>
 <main>
-  <div class="intervention-sector">
+  <nav>
+    <ul>
+      <li> <a href="#a_propos">A propos</a>  </li>
+      <li> <a href="#services">Prestations</a>  </li>
+      <li> <a href="#realisations">Réalisations</a> </li>
+      <li> <a href="#form_contact">Me contacter</a> </li>
+    </ul>
+  </nav>
+  <!-- <div class="intervention-sector">
     <div class="illustration">
       
     </div>
@@ -35,10 +37,19 @@
     <div class="illustration">
   
     </div>
+  </div> -->
+  <div id="a_propos" class="propos">
+    <div class="presentation">
+      <p>J'interviens principalement à saint gervais d'auvergne et dans un rayon de 20 km.
+        <br>En choisissant mes services, vous opter pour un électricien qui allie technique, précision et un sens aigu du service. <br>Je suis à votre écoute pour tous vos projets électriques, que ce soit pour une rénovation, une installation neuve ou un dépannage. </p>
+    </div>
+    <div class="objectif">
+      <p>Mon objectif est de vous fournir une prestation de qualité, qui respecte vos attentes et vos délais.</p>
+    </div>
   </div>
   </div>
   <section class="services_carrousel">
-    <div class="services">
+    <div id="services">
       <ul>
         <li>Installation</li>
         <li>Rénovation</li>
@@ -48,7 +59,7 @@
 
     </div>
 
-    <div class="swiper">
+    <div class="swiper" id="realisations">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="./assets/img/carrefour.webp" alt="Changement de luminaire à Carrefour St Gervais">
@@ -71,7 +82,12 @@
 
   </section>
 
-  <section class="form_contact"></section>
+  <section id="form_contact"></section>
+  <form action="get">
+    <label for="nom">Nom</label>
+    <input type="text">
+    <label for="prenom"></label>
+  </form>
   
 </main>
 <footer>
