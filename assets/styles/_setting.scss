@@ -18,7 +18,6 @@ $green:#a6ce3f;
 $white:rgb(247, 241, 241);
 
 *{
-   background: $blue;
    color:$white;
    max-width: 99vw;
 }
@@ -27,6 +26,9 @@ $white:rgb(247, 241, 241);
 body{
    margin: 0;
    padding: 0;
+   background: $blue;
+   display: flex;
+   flex-direction: column;
    
    a{
       text-decoration: none;
