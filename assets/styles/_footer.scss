@@ -1,35 +1,61 @@
 footer{
-    min-width: 100%;
-    text-align: center;
-    font-size: 1.2rem;
-    position: relative;
-    margin-top: -150px;
-    clear: both;
-    
-&::before{
-    content: "";
-    position:absolute;
-    background: $green;
-    height: 5px;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%) scaleX(0);
-    animation: footeranim 6s ease-in-out 4s forwards;
-    transform-origin: right;
-}
-@keyframes footeranim {
-    100% {
-        transform: translateX(-50%) scaleX(1) ;
-    } 
-}
- p{
-    padding: 5px;
-    display: inline;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(245, 245, 245, 0.26);
+    backdrop-filter: blur(20px);
+    &::before{
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: $green;
     }
-.ste{
-    display: block;
-}
-.edosz{
-    font-family: $fontN;
-}
+    h4{
+      margin: 3px;
+      text-align: center;
+      font-size: 2.4rem;
+      padding-top: 5px; 
+      position: relative;
+      &::after{
+        content: "";
+        width: 3px;
+        height: 45px;
+        background: $green;
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+      }
+    }
+  .contact_container{
+   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    
+
+    // ::before{
+    //   position: absolute;
+    //   content:"";
+    //   height: 100%;
+    //   width: 2px;
+    //   background: $green;
+    // }
+    }
+    h5{
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    p{
+     margin: 0;
+    }
+ 
+  ul{
+    padding: 0 10px 0 35px;
+    justify-content: space-between;
+    text-align: center;
+    li{
+      padding: 0 5px;
+    }
+  }
 }

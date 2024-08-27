@@ -1,0 +1,96 @@
+ #form_contact{
+    padding: 5px 50px;
+    
+    h3{
+      font-size: 2.8rem;
+      text-align: center;
+      margin: 1px;
+      font-family: $norican;
+      letter-spacing: 6px;
+    }
+    form{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin: 0 350px;
+
+      .form_id{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        text-align: center;
+        margin: 5px;
+        
+        label{
+          margin: 5px;
+          font-size: 1.4rem;
+        }
+        input{
+          width: 55%;
+          padding: 5px 10px;
+          border-radius: 10px;
+          outline: none;
+          color: $blue;
+          font-size: 1.2rem;
+          
+        }
+        &.right{
+          align-items: start;
+        }
+        .left{
+          align-items: end;
+          margin-right: 0;
+          padding-right: 0;
+          position: absolute;
+          top: 32px;
+          right: 1px;
+        }
+      }
+      select{
+        grid-area: 3 / 1 /3 /3;
+        width: 40%;
+        justify-self: center;
+        margin: 10px 0;
+        color:$blue;
+        border-radius: 10px;
+        padding: 5px ;
+        font-family: $fontG;
+        font-size: 1.2rem;
+        option{
+          color: $blue;
+        }
+      }
+      textarea{
+      grid-area: 4 / 1 / 4 /3 ;
+      width: 55%;
+      justify-self: center;
+      height: 150px;
+      margin-bottom: 10px;
+      color:$blue;
+      resize: none;
+      border-radius: 10px;
+      font-family: $fontG;
+      font-size: 1.2rem;
+      }
+      input[type="submit"]{
+        display: block;
+        width: 20%;
+        border-radius: 15px;
+        padding: 5px 0;
+        cursor: pointer;
+        color: $blue;
+        grid-area: 5 / 1 / 5/ 3;
+        justify-self: center;
+        background: $white;
+        font-family: $fontG;
+        font-size: 1.2rem;
+        &:hover{
+          background: $green;
+          transform: scale(1.5);
+          box-shadow: 6px 3px 3px 2px #00000057;
+          animation: 0.5s ease-in-out;
+        }
+      }
+  
+    }
+}
