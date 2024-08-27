@@ -11,7 +11,10 @@
     display: flex;
     padding: 0 250px;
     font-style: oblique;
-    font-size: 2.2rem;
+    letter-spacing: 5px;
+    font-size: 2.1rem;
+    font-weight: 500;
+    font-family: $fontnot;
     &::before{
       content: "";
       margin: 20px 10px 0 35px;
