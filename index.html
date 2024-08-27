@@ -1,140 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QL Elec - Electricien à Saint Gervais d'auvergne</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./assets/styles/index.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    
-  </head>
-  <body>
-    <header>
-      <h1>QL Elec</h1>
-    </header>
-    <main>
-      <div class="info-dev">
-        <p>Secteur d'intervention :<br> rayon de 20km autour de St Gervais d'Auvergne</p>
-        <p class="right">Devis gratuit</p>
-      </div>
-      <div class="grid-container">
-          <section class="presta-grid">   
-            <div class="prestation-container">
-              <h2>Prestations</h2>
-              <ul>
-                <div class="puce">
-                  <i class="fa-regular fa-lightbulb"></i>
-                  <li>Installation </li>
-                </div>
-                <div class="puce">
-                  <i class="fa-regular fa-lightbulb"></i>
-                  <li>Rénovation </li>
-                </div>  
-                <div class="puce">
-                  <i class="fa-regular fa-lightbulb"></i>
-                  <li>Dépannage</li>
-                </div>
-                <div class="puce">
-                  <i class="fa-regular fa-lightbulb"></i>
-                  <li>Mise aux normes</li>
-                </div>
-              </ul>
-            </div>
-          </section>
-          <section class="carrousel-grid">
-          <div id="diapo" class="carrousel">
-            <div class="item active">
-              <img src="./assets/img/tableauavant1.webp" alt="Tableau électrique avant">
-              <p class="description">Tableau électrique avant</p>
-            </div>
-            <div class="item">
-              <img src="./assets/img/tableauapres1.webp" alt="Tableau électrique après">
-              <p class="description">Tableau électrique après</p>
-            </div>
-            <div class="item">
-              <img src="./assets/img/creationtableau1.webp" alt="Création tableau">
-              <p class="description">Création tableau</p>
-            </div>
-            <div class="item">
-              <img src="./assets/img/carrefour.webp" alt="Remplacement luminaires - <br> Carrefour St Gervais">
-              <p class="description"> Remplacement luminaires Carrefour St Gervais</p>
-            </div>
-            <div class="item">
-              <img src="./assets/img/landogne.webp" alt="Intervention à Landogne">
-              <p class="description"> Intervention à Landogne</p>
-            </div>
-            <div id="diapo" class="carrousel">
-              <div class="item">
-                <img src="./assets/img/tableauavant1.webp" alt="Tableau électrique avant">
-                <p class="description">Tableau électrique avant</p>
-              </div>
-          </div>        
-         </section> 
-         <section class="contact-grid">
-            <div class="contact-form">
-              <form action="POST" action="mail.php">
-              <h2>Contactez-moi</h2>
-              <div class="corpsformulaire">
-                <div class="boite">
-               <label for="nom">Votre nom</label>
-                   <i class="fa-solid fa-user" style="color: #103d74;"></i>
-                   <input type="text" name="nom" id="nom" required>
-              </div>
-              <div class="boite">
-               <label for="telephone">Votre numéro de téléphone</label>
-               <i class="fa-solid fa-phone" style="color:#103d74;"></i>
-              <input type="text" name="telephone" id="telephone" required>
-              </div>
-              <div class="boite">
-             <label for="mail">Votre email</label>
-              <i class="fa-solid fa-envelope" style="color: #103d74;"></i>
-              <input type="email" name="email" id="mail" required>
-              </div>
-              <div class="boite">
-                      <label for="demande">Votre demande</label>
-                      <select id="demande">
-                        <option value="">Choisissez un motif</option>
-                        <option value="Miseaunormes">Mise aux normes</option>
-                        <option value="reno">Rénovation</option>
-                        <option value="nouvelleinstallation">Nouvelle installation</option>
-                        <option value="acquisition">Demande de devis pour un futur achat</option>
-                      </select>
-                </div>
-                    <div class="boite">
-                      <label for="message" name="message">Message</label>
-                      <textarea id="message"placeholder="Saisissez votre message ici..."></textarea>
-                    </div>
-                  </div>                    
-              <input class="btn" type="submit">
-            </form>
-            <!-- <?php
-            if (isset($_POST['message'])) {
-                $retour = mail('qlelec@outlook.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: webmaster@monsite.fr' . "\r\n" . 'Reply-to: ' . $_POST['email']);
-                if($retour)
-                    echo '<p>Votre message a bien été envoyé.</p>';
-            }
-            ?> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QL Elec - Electricien à Saint Gervais d'Auvergne</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+<body>
+<div class="start_image">
 
-          </div>  
-          </section>
-        </div>
-      </main>
-      <div class="modal" id="modal">
-       <span class="close"><i class="fa-solid fa-xmark"></i></span>
-       <img src="" alt="">
-       <p class="legende"> </p>
+</div>
+<header> 
+  <div class="devis_gratuit">
+    <h3>Devis Gratuit</h3>
+  </div>
+  <div class="entete">
+    <h1>QL Elec</h1>
+    <h2>Electricien à Saint Gervais dAuvergne</h2>
+    <h3>06.29.95.99.77 | QLelec@outlook.com</h3>
+  </div>
+  <div class="deplacement">
+    <h3>Interventions : <br> rayon de 20Km</h3>
+  </div>
+</header>
+<main>
+  <nav>
+    <ul>
+      <li> <a href="#a_propos">A propos</a>  </li>
+      <li> <a href="#services">Prestations</a>  </li>
+      <li> <a href="#realisations">Réalisations</a> </li>
+      <li> <a href="#form_contact">Me contacter</a> </li>
+    </ul>
+  </nav>
+  <div id="a_propos" class="propos">
+    <div class="presentation">
+      <p>J'interviens principalement à saint gervais d'auvergne et dans un rayon de 20 km.
+        <br>En choisissant mes services, vous opter pour un électricien qui allie technique, précision et un sens aigu du service. <br>Je suis à votre écoute pour tous vos projets électriques, que ce soit pour une rénovation, une installation neuve ou un dépannage. </p>
+    </div>
+    <div class="objectif">
+      <p>Mon objectif : fournir une prestation de qualité, qui respecte vos attentes et vos délais.</p>
+    </div>
+  </div>
+  </div>
+  <section class="services_carrousel">
+    <div id="services">
+      <div class="card-service">
+        <img src="./assets/img/ampoules.png" alt="">
+        <p>Installation / Rénovation <br> du systèmes d'éclairage</p>
       </div>
-      <footer>
-        <p class="ste edosz">EURL QL ELEC</p>
-        <p class="edosz">Contact</p><p> 06.29.95.99.77 | </p><p class="edosz">Mail</p>: QLelec@outlook.com</p>
-      </footer>
-    <script src="script.js"></script>
-  </body>
+      <div class="card-service">
+        <img src="./assets/img/tableau.png" alt="">
+        <p>Installation/ Rénovation <br> de l'installation électrique<br>(prises, interupteurs, tableaux-électriques)</p>
+      </div>
+      <div class="card-service">
+        <img src="./assets/img/prise.png" alt="">
+        <p>Dépannage<br> (pannes, courts-circuits)</p>
+      </div>
+      <div class="card-service">
+        <img src="./assets/img/ampoules2.png" alt="">
+        <p>Mise en conformité</p>
+      </div>
+      <!-- <ul>
+        <li>Installation</li>
+        <li>Rénovation</li>
+        <li>Dépannage</li>
+        <li>Mise aux normes</li>
+      </ul> -->
+
+    </div>
+
+    <div class="swiper" id="realisations">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/img/carrefour.webp" alt="Changement de luminaire à Carrefour St Gervais">
+          <p> Changement de luminaire à Carrefour St Gervais</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/creationtableau1.webp" alt="Création tableau électrique">
+          <p>Création tableau électrique</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/landogne.webp" alt="Intervention à Landogne">
+          <p>Intervention à Landogne</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/img/tableau_avant_apres.webp" alt="Tableau électrique avant/après">
+         <p> Mise au normes tableau</p>
+        </div>
+        <!-- <div class="swiper-slide"></div> -->
+      </div>
+      <div class="swipper-button-prev"></div>
+      <div class="swipper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+  </section>
+
+  <section id="form_contact"></section>
+  <form action="get">
+    <label for="nom">Nom</label>
+    <input type="text">
+    <label for="prenom">Prénom</label>
+    <input type="text">
+    <label for="mail">email</label>
+    <input type="mail">
+    <label for="telephone">Téléphone</label>
+    <input type="telephone">
+    <select name="" id="" value ="Sélectionner un motif">
+      <option value="1">Demande de devis</option>
+      <option value="2">Remise aux normes</option>
+      <option value="3"> Dépannage</option>
+
+    </select>
+    <textarea name="" id="">Saissez ici, votre message. Dans le cas d'un devis pour une vente ou une acquision merci de précier la date butoire et vos diposniblités</textarea>
+    <input type="submit" value="Envoyer">
+  </form>
+  
+</main>
+<footer>
+  <div class="contact">
+    <h4> QL Elec</h4>
+    <div class="contact_container">
+      <ul>
+        <li><h5>Téléphone :</h5> 06.29.95.99.77</li>
+        <li><h5>Mail :</h5>Qlelec@outlook.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="mentions">
+    <ul>
+      <li>Conditions Générales de Ventes</li>
+      <li>Mentions Légales</li>
+    </ul>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/index.js"></script>
+</body>
 </html>
