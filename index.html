@@ -63,12 +63,6 @@
         <img src="./assets/img/multimetre.png" alt="">
         <p>Mise en conformité</p>
       </div>
-      <!-- <ul>
-        <li>Installation</li>
-        <li>Rénovation</li>
-        <li>Dépannage</li>
-        <li>Mise aux normes</li>
-      </ul> -->
 
     </div>
 
@@ -92,8 +86,6 @@
         </div>
         <!-- <div class="swiper-slide"></div> -->
       </div>
-      <div class="swipper-button-prev"></div>
-      <div class="swipper-button-next"></div>
       <div class="swiper-scrollbar"></div>
     </div>
 
@@ -101,7 +93,7 @@
 
   <section id="form_contact">
     <h3>Me contacter</h3>
-    <form action="get">
+    <form method="post" action="">
       <div class="form_id">
         <label for="nom">Nom</label>
         <input class="left" type="text">
@@ -120,14 +112,14 @@
         <label for="telephone">Téléphone</label>
         <input type="telephone">
       </div>
-  
-        <select name="" id="" value ="Sélectionner un motif">
+        <label for="object_form">Sélectionner</label>
+        <select name="" id="object_form">
           <option value="1">Demande de devis</option>
           <option value="2">Remise aux normes</option>
-          <option value="3"> Dépannage</option>
+          <option value="3">Dépannage</option>
         </select>
            
-        <textarea name="" id="" placeholder="Saissez ici, votre message. Dans le cas d'un devis pour une vente ou une acquision merci de précier la date butoire et vos diposniblités"></textarea>
+        <textarea name="message" id="" placeholder="Saissez ici, votre message. Dans le cas d'un devis pour une vente ou une acquision merci de précier la date butoire et vos diposniblités"></textarea>
       
       
       <input type="submit" value="Envoyer">
@@ -158,6 +150,6 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="/index.js"></script>
+<script src="/index.js" ></script>
 </body>
 </html>
