@@ -93,36 +93,37 @@
 
   <section id="form_contact">
     <h3>Me contacter</h3>
-    <form method="post" action="">
+    <form action="" >
       <div class="form_id">
         <label for="nom">Nom</label>
-        <input class="left" type="text">
+        <input class="left" id="nameInput" type="text" name="nom">
       </div>
 
       <div class="form_id right">
         <label for="prenom">Prénom</label>
-        <input type="text">
+        <input type="text" id="firstName" name="prenom">
       </div>
 
       <div class="form_id">
-        <label for="mail">Email</label>
-        <input class="left" type="mail">
+        <label for="email">Email</label>
+        <input class="left" id="email" type="email" name="email">
       </div>
       <div class="form_id  right">
         <label for="telephone">Téléphone</label>
-        <input type="telephone">
+        <input type="number" id="phone"name="telephone">
       </div>
-        <label for="object_form">Sélectionner</label>
-        <select name="" id="object_form">
+        <label for="object_form"></label>
+        <select name="object_form" id="object_form">
+          <option value="">Sélectionner</option>
           <option value="1">Demande de devis</option>
           <option value="2">Remise aux normes</option>
           <option value="3">Dépannage</option>
         </select>
            
-        <textarea name="message" id="" placeholder="Saissez ici, votre message. Dans le cas d'un devis pour une vente ou une acquision merci de précier la date butoire et vos diposniblités"></textarea>
+        <textarea name="message" id="message" placeholder="Saissez ici, votre message. Dans le cas d'un devis pour une vente ou une acquision merci de précier la date butoire et vos diposniblités"></textarea>
       
       
-      <input type="submit" value="Envoyer">
+      <input type="submit"value="Envoyer">
     </form>
   </section>
   
@@ -144,12 +145,12 @@
   <div class="mentions">
     <ul>
       <li>Mentions Légales</li>
-      <li>Conditions Générales de Ventes</li>
+      <li> <a href="./cdv.html">Conditions Générales de Ventes</a></li>
       <li> © Annabelle Larney 2024 </li>
     </ul>
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="/index.js" ></script>
+<script src="/index.js"></script>
 </body>
 </html>
