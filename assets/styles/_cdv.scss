@@ -1,0 +1,34 @@
+.titrecdv{
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    &::after{
+      content: "";
+      background: $green;
+      height: 2px;
+      width: 80%;
+      position: absolute;
+      bottom: -6px;
+      left: 10%;
+    }
+}
+.home{
+    display: block;
+    position: absolute;
+    right: 80px;
+    top: 35px;
+   i{  
+     color: $green;
+     font-size: 2rem;
+   } 
+   &:hover{
+    transform: scale(1.5);
+    transition: 0.3s ease-in-out;
+   }
+}
+.cdv{
+    padding: 0 20px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 1.2rem;
+}
