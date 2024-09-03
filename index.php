@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+$erreurs =$_SESSION['erreurs']?? [];
+$donnees_post = $_SESSION['donnes_post']?? [];
+$form_soumis = $_SESSION['form_soumis']?? false;
+
+unset($_SESSION['erreurs']);
+unset($_SESSION['donnees_post']);
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -98,8 +109,16 @@
 
   <section id="form_contact">
     <h3>Me contacter</h3>
-    <?php
-    $erreurs =['nom'=>" ", 'prenom'=> " ", 'mail'=> " ", 'telephone'=>" ",'sujet'=>" ", 'message'=>" " ];
+
+  <?php if($form_soumis): ?>
+      <p class="mailEnvoye">Votre message a été envoyé. Je prendrai contact avec vous dans les meilleurs délais.</p>
+    <?php else: ?>
+      
+      <?php if(isset($erreurs['contact'])): ?>
+        <p class="erreur"><?=$erreurs['form']; ?></p>
+      <?php endif; ?>
+
+    <!-- $erreurs =['nom'=>" ", 'prenom'=> " ", 'mail'=> " ", 'telephone'=>" ",'sujet'=>" ", 'message'=>" " ];
     $confirmeMailenvoi =" ";
     $visibiliteForm = " ";
 
@@ -115,18 +134,19 @@
         'sujet'=> $_GET['er_sujet']?? '',
         'message' => $_GET['er_message']??''
       ];
-    }
-    ?>
-    <?php if($confirmeMailenvoi): ?>
-      <p class="msgEnvoye"><?=$confirmeMailenvoi;?></p>
-    <?php endif;  ?>
+    } -->
+    
+<!--     
+      <p class="msgEnvoye"></p>
+    <?php endif;  ?> -->
 
-    <?php if($visibiliteForm): ?>
+    <?php if(!$form_soumis): ?>
+
     <form method="POST" action="/traitement.php">
       <div class="form_id">
         <label for="nom">Nom</label>
         <input class="left" type="text" name="nom" id="nom" placeholder="Votre nom"required>
-        <span class="erreur"><?= $erreurs['nom']?? '';?></span>
+        <span class="erreur"><?= $erreurs['nom']?? ''; ?></span>
       </div>
 
       <div class="form_id right">
@@ -165,7 +185,7 @@
         <label for="accord">J'autorise la société QL Elec à communiquer avec moi</label>
       </div>
     </form>
-    <?php endif; ?>
+  <?php endif; ?>
   </section>
   
 </main>
